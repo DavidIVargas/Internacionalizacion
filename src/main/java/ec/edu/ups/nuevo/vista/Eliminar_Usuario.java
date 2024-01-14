@@ -6,14 +6,18 @@ package ec.edu.ups.nuevo.vista;
 
 import ec.edu.ups.nuevo.controlador.UsuarioControlador;
 import ec.edu.ups.nuevo.modelo.Usuario;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
  * @author davidvargas
  */
 public class Eliminar_Usuario extends javax.swing.JInternalFrame {
-
+    
     private UsuarioControlador usuarioControlador;
 
     /**
@@ -22,6 +26,7 @@ public class Eliminar_Usuario extends javax.swing.JInternalFrame {
     public Eliminar_Usuario(UsuarioControlador usuarioControlador) {
         initComponents();
         this.usuarioControlador = usuarioControlador;
+        
     }
 
     /**

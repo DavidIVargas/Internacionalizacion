@@ -7,17 +7,22 @@ package ec.edu.ups.nuevo.vista;
 import ec.edu.ups.nuevo.controlador.UsuarioControlador;
 import ec.edu.ups.nuevo.idao.UsuarioDAO;
 import ec.edu.ups.nuevo.modelo.Usuario;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.util.Locale;
 import java.util.ResourceBundle;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 /**
  *
  * @author davidvargas
  */
 public class Crear_Usuario extends javax.swing.JInternalFrame {
-
+    
     public Crear_Usuario() {
         initComponents();
+        
     }
     public void cambiarIdioma(Locale locale){
         ResourceBundle mensajes = ResourceBundle.getBundle("mensajes.mensajes", locale);

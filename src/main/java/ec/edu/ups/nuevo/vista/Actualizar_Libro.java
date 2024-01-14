@@ -6,14 +6,20 @@ package ec.edu.ups.nuevo.vista;
 
 import ec.edu.ups.nuevo.controlador.LibroControlador;
 import ec.edu.ups.nuevo.modelo.Libro;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
  * @author davidvargas
  */
 public class Actualizar_Libro extends javax.swing.JInternalFrame {
-
+    //Imagen
+    
+    
     private LibroControlador libroControlador;
 
     /**
@@ -22,6 +28,7 @@ public class Actualizar_Libro extends javax.swing.JInternalFrame {
     public Actualizar_Libro(LibroControlador libroControlador) {
         initComponents();
         this.libroControlador = libroControlador;
+        
 
     }
 

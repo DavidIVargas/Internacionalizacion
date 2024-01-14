@@ -7,7 +7,11 @@ package ec.edu.ups.nuevo.vista;
 import ec.edu.ups.nuevo.controlador.LibroControlador;
 import ec.edu.ups.nuevo.controlador.UsuarioControlador;
 import ec.edu.ups.nuevo.modelo.Libro;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
@@ -16,13 +20,14 @@ import javax.swing.JOptionPane;
 public class Agregar_Libro extends javax.swing.JInternalFrame {
 
     private LibroControlador libroControlador;
-
+   
     /**
      * Creates new form Agregar_Libro
      */
     public Agregar_Libro(LibroControlador libroControlador) {
         initComponents();
         this.libroControlador = libroControlador;
+        
     }
 
     /**
@@ -223,4 +228,5 @@ public class Agregar_Libro extends javax.swing.JInternalFrame {
     private javax.swing.JTextField txtAutor;
     private javax.swing.JTextField txtTitulo;
     // End of variables declaration//GEN-END:variables
+
 }

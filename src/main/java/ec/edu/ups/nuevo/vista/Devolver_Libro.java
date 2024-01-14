@@ -12,14 +12,18 @@ import ec.edu.ups.nuevo.idao.PrestamoDAO;
 import ec.edu.ups.nuevo.modelo.Libro;
 import ec.edu.ups.nuevo.modelo.Prestamo;
 import ec.edu.ups.nuevo.modelo.Usuario;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
  * @author davidvargas
  */
 public class Devolver_Libro extends javax.swing.JInternalFrame {
-
+    
     private LibroControlador libroControlador;
     private PrestamoControlador prestamoControlador;
     private UsuarioControlador usuarioControlador;
@@ -30,6 +34,7 @@ public class Devolver_Libro extends javax.swing.JInternalFrame {
      */
     public Devolver_Libro(LibroControlador libroControlador, PrestamoControlador prestamoControlador, UsuarioControlador usuarioControlador, PrestamoDAO prestamoDAO) {
         initComponents();
+        
         this.libroControlador = libroControlador;
         this.prestamoControlador = prestamoControlador;
         this.usuarioControlador = usuarioControlador;
@@ -197,4 +202,5 @@ public class Devolver_Libro extends javax.swing.JInternalFrame {
         this.txtId.setText("");
         this.txtTitulo.setText("");
     }
+    
 }

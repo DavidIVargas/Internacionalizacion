@@ -6,7 +6,11 @@ package ec.edu.ups.nuevo.vista;
 
 import ec.edu.ups.nuevo.controlador.LibroControlador;
 import ec.edu.ups.nuevo.modelo.Libro;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
@@ -15,13 +19,14 @@ import javax.swing.JOptionPane;
 public class Buscar_Libro extends javax.swing.JInternalFrame {
 
     private LibroControlador libroControlador;
-
+    
     /**
      * Creates new form Buscar_Libro
      */
     public Buscar_Libro(LibroControlador libroControlador) {
         initComponents();
         this.libroControlador = libroControlador;
+        
     }
 
     /**

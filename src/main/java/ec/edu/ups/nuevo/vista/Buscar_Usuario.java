@@ -6,7 +6,11 @@ package ec.edu.ups.nuevo.vista;
 
 import ec.edu.ups.nuevo.controlador.UsuarioControlador;
 import ec.edu.ups.nuevo.modelo.Usuario;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
@@ -16,6 +20,7 @@ public class Buscar_Usuario extends javax.swing.JInternalFrame {
 
     private UsuarioControlador controladorUsuario;
     private Crear_Usuario crear_Usuario;
+    
 
     /**
      * Creates new form Buscar_Usuario
@@ -23,6 +28,7 @@ public class Buscar_Usuario extends javax.swing.JInternalFrame {
     public Buscar_Usuario(UsuarioControlador controladorUsuario) {
         initComponents();
         this.controladorUsuario = controladorUsuario;
+        
 
     }
 

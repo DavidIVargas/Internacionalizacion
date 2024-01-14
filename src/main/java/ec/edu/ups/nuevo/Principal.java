@@ -21,14 +21,20 @@ import ec.edu.ups.nuevo.vista.Devolver_Libro;
 import ec.edu.ups.nuevo.vista.Eliminar_Libro;
 import ec.edu.ups.nuevo.vista.Eliminar_Usuario;
 import ec.edu.ups.nuevo.vista.Prestar_Libro;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.util.Locale;
 import java.util.ResourceBundle;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 /**
  *
  * @author davidvargas
  */
 public class Principal extends javax.swing.JFrame {
+    //Imagen
+    FondoPanel fondo = new FondoPanel();
 
     //Controladores
     private Biblioteca_Controlador controladorBiblioteca;
@@ -60,6 +66,7 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
+        this.setContentPane(fondo);
         controladorUsuario = new UsuarioControlador(new UsuarioDAO());
         controladorLibro = new LibroControlador(new LibroDAO());
         controladorPrestamo = new PrestamoControlador(new PrestamoDAO(), new UsuarioControlador(new UsuarioDAO()));
@@ -428,4 +435,21 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem mniEliminar_Usuario;
     private javax.swing.JMenuItem mniPrestar_Libro;
     // End of variables declaration//GEN-END:variables
+    
+//imagen
+    class FondoPanel extends JPanel{
+        private Image imagen;
+        
+        @Override
+        public void paint(Graphics g){
+            imagen  = new ImageIcon(getClass().getResource("/imagenes/Fondo.jpeg")).getImage();
+            
+            g.drawImage(imagen,0,0,getWidth(),getHeight(),this);
+            
+            setOpaque(false);
+            
+            super.paint(g);
+        }
+                
+    }
 }
