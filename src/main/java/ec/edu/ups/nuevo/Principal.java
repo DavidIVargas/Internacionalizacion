@@ -109,6 +109,8 @@ public class Principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -117,11 +119,13 @@ public class Principal extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 383, Short.MAX_VALUE)
+            .addGap(0, 380, Short.MAX_VALUE)
         );
 
+        mnUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Usuario.png"))); // NOI18N
         mnUsuario.setText("Usuario");
 
+        mniAgregar_Usuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/AgregarUsuario.png"))); // NOI18N
         mniAgregar_Usuario.setText("Agregar Usuario");
         mniAgregar_Usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,6 +134,7 @@ public class Principal extends javax.swing.JFrame {
         });
         mnUsuario.add(mniAgregar_Usuario);
 
+        mniBuscar_Usuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BuscarUsuario.png"))); // NOI18N
         mniBuscar_Usuario.setText("Buscar Usuario");
         mniBuscar_Usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,6 +143,7 @@ public class Principal extends javax.swing.JFrame {
         });
         mnUsuario.add(mniBuscar_Usuario);
 
+        mniActualizar_Usuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Actualizar Usuario.png"))); // NOI18N
         mniActualizar_Usuario.setText("Actualizar Usuario");
         mniActualizar_Usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,6 +152,7 @@ public class Principal extends javax.swing.JFrame {
         });
         mnUsuario.add(mniActualizar_Usuario);
 
+        mniEliminar_Usuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Eliminar Usuario.png"))); // NOI18N
         mniEliminar_Usuario.setText("Eliminar Usuario");
         mniEliminar_Usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,8 +163,10 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(mnUsuario);
 
+        mnLibro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Libro.png"))); // NOI18N
         mnLibro.setText("Libro");
 
+        mniAgregar_Libro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Agregar Libro.png"))); // NOI18N
         mniAgregar_Libro.setText("Agregar Libro");
         mniAgregar_Libro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -166,6 +175,7 @@ public class Principal extends javax.swing.JFrame {
         });
         mnLibro.add(mniAgregar_Libro);
 
+        mniBuscar_Libro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Buscar Libro.png"))); // NOI18N
         mniBuscar_Libro.setText("Buscar Libro");
         mniBuscar_Libro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -174,6 +184,7 @@ public class Principal extends javax.swing.JFrame {
         });
         mnLibro.add(mniBuscar_Libro);
 
+        mniActualizar_Libro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Actualizar Libro.png"))); // NOI18N
         mniActualizar_Libro.setText("Actualizar Libro");
         mniActualizar_Libro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -182,6 +193,7 @@ public class Principal extends javax.swing.JFrame {
         });
         mnLibro.add(mniActualizar_Libro);
 
+        mniEliminar_Libro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Eliminar Libro.png"))); // NOI18N
         mniEliminar_Libro.setText("Eliminar Libro");
         mniEliminar_Libro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -192,8 +204,10 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(mnLibro);
 
+        mnPrestar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Prestar.png"))); // NOI18N
         mnPrestar.setText("Prestar");
 
+        mniPrestar_Libro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Prestar.png"))); // NOI18N
         mniPrestar_Libro.setText("Prestar Libro");
         mniPrestar_Libro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,8 +218,10 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(mnPrestar);
 
+        mnDevolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Devolver.png"))); // NOI18N
         mnDevolver.setText("Devolver");
 
+        mniDevolver_Libro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Devolver.png"))); // NOI18N
         mniDevolver_Libro.setText("Devolver Libro");
         mniDevolver_Libro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -216,8 +232,10 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(mnDevolver);
 
+        menuIdiomas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Idiomas.png"))); // NOI18N
         menuIdiomas.setText("Idiomas");
 
+        menuItemEspanol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Espanol.png"))); // NOI18N
         menuItemEspanol.setText("Español");
         menuItemEspanol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,6 +244,7 @@ public class Principal extends javax.swing.JFrame {
         });
         menuIdiomas.add(menuItemEspanol);
 
+        menuItemIngles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Ingles.png"))); // NOI18N
         menuItemIngles.setText("Inglés");
         menuItemIngles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
